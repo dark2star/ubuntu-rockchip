@@ -12,8 +12,10 @@ jobs:
     strategy:
         matrix:
           flavor:
+            - desktop
             - server
           suite:
+            - jammy
             - noble
     steps:
       - name: Get more disk space
@@ -61,6 +63,7 @@ jobs:
     strategy:
         matrix:
           suite:
+            - jammy
             - noble
     steps:
       - name: Get more disk space
@@ -112,8 +115,10 @@ jobs:
         board:
           - orangepi-5-plus
         flavor:
+          - desktop
           - server
         suite:
+          - jammy
           - noble
         exclude:
           - board: armsom-sige5
