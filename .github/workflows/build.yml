@@ -12,10 +12,8 @@ jobs:
     strategy:
         matrix:
           flavor:
-            - desktop
             - server
           suite:
-            - jammy
             - noble
     steps:
       - name: Get more disk space
@@ -63,7 +61,6 @@ jobs:
     strategy:
         matrix:
           suite:
-            - jammy
             - noble
     steps:
       - name: Get more disk space
